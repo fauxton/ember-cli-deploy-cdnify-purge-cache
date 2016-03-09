@@ -12,12 +12,12 @@ module.exports = {
       requiredConfig: ['cdnifyResourceId', 'cdnifyApiKey'],
 
       didDeploy: function(context) {
-        let config = context.config['cdnify-purge-cache']
-        let apiKey = config['cdnifyApiKey'];
-        let resourceId = config['cdnifyResourceId'];
+        var config = context.config['cdnify-purge-cache']
+        var apiKey = config['cdnifyApiKey'];
+        var resourceId = config['cdnifyResourceId'];
 
-        let endpoint = `cdnify.com/api/v1/resources/${resourceId}/cache`;
-        let credentials = `${apiKey}:x`;
+        var endpoint = `cdnify.com/api/v1/resources/${resourceId}/cache`;
+        var credentials = `${apiKey}:x`;
 
         var self = this;
 
