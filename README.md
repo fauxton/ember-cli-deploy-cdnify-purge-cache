@@ -1,12 +1,15 @@
-# Ember-cli-deploy-cdnify-purge-cache
+# ember-cli-deploy-cdnify-purge-cache
 
-This README outlines the details of collaborating on this Ember addon.
+Ember CLI addon to purge your CDNify cache on successul s3 deploys using
+ember-cli-deploy. Without this plugin, CDNify will not immediately serve your
+newly deployed code; instead, it will only be available after the configured cache time has
+elapsed.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```sh
+$ ember install ember-cli-deploy-cdnify-purge-cache
+```
 
 ## Running
 
