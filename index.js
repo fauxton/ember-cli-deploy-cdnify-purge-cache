@@ -16,14 +16,14 @@ module.exports = {
         var apiKey = config['cdnifyApiKey'];
         var resourceId = config['cdnifyResourceId'];
 
-        var endpoint = `cdnify.com/api/v1/resources/${resourceId}/cache`;
-        var credentials = `${apiKey}:x`;
+        var endpoint = 'cdnify.com/api/v1/resources/' + resourceId + '/cache';
+        var credentials = apiKey + ':x';
 
         var self = this;
 
         return new Promise(function(resolve, reject) {
           request({
-            url: `https://${credentials}@${endpoint}`,
+            url: 'https://' + credentials + '@' + endpoint,
             method: "DELETE"
           }, function(error, response, body) {
             if(error) {
