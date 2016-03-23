@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-cdnify-purge-cache",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Purge your CDNify cache as part of your ember-cli-deploy process",
   "directories": {
     "doc": "doc",
