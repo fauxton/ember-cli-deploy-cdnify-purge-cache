@@ -3,6 +3,8 @@
 var request = require('request');
 var BasePlugin = require('ember-cli-deploy-plugin');
 
+require('ssl-root-cas').inject();
+
 module.exports = {
   name: 'ember-cli-deploy-cdnify-purge-cache',
   createDeployPlugin: function(options) {

@@ -47,7 +47,8 @@
   "dependencies": {
     "ember-cli-babel": "^5.1.5",
     "ember-cli-deploy-plugin": "^0.2.2",
-    "request": "^2.69.0"
+    "request": "^2.69.0",
+    "ssl-root-cas": "^1.2.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
